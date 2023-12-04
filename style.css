@@ -1,0 +1,224 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 200px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: rgb(236, 242, 248);
+  max-height: 100vh;
+}
+
+#coord1 {
+  display: flex;
+}
+#coord1 #img1 {
+  border-radius: 50%;
+  border: 1px solid rgb(151, 115, 208);
+}
+
+.coord2 {
+  display: flex;
+}
+.coord2 #img2 {
+  border-radius: 50%;
+  border: 1px solid rgb(207, 207, 207);
+}
+
+.coord3 {
+  display: flex;
+}
+.coord3 #img3 {
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 100%);
+}
+
+.coord4 {
+  display: flex;
+}
+.coord4 #img4 {
+  border-radius: 50%;
+  border: 1px solid rgb(151, 115, 208);
+}
+
+.coord5 {
+  display: flex;
+}
+.coord5 #img5 {
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 100%);
+}
+
+#dan,
+#jon,
+#jean,
+#pat,
+#kira {
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.quatre {
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px 20px;
+  margin: 10px;
+}
+
+.daniel {
+  flex: 2;
+  flex-direction: row;
+  background-color: rgb(117, 65, 200);
+  border-radius: 8px;
+  padding: 25px;
+  background-image: url("bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top right 60px;
+}
+
+.jon {
+  flex: 1;
+  flex-direction: row;
+  border-radius: 8px;
+  background-color: rgb(72, 85, 106);
+  padding: 25px;
+}
+
+.bas {
+  display: flex;
+  flex-direction: row;
+  gap: 10px 10px;
+  flex-grow: 1;
+}
+
+.jean {
+  flex: 1;
+  flex-direction: row;
+  border-radius: 8px;
+  background-color: white;
+  padding: 25px;
+}
+.jean p {
+  color: rgb(207, 207, 207);
+}
+
+.pat {
+  flex: 2;
+  flex-direction: row;
+  border-radius: 8px;
+  background-color: rgb(25, 33, 46);
+  padding: 25px;
+}
+
+.kira {
+  flex: 1;
+  border-radius: 8px;
+  margin: 10px;
+  margin-left: 10px;
+  background-color: white;
+  padding: 25px;
+}
+.kira p {
+  color: rgb(207, 207, 207);
+}
+
+p {
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed";
+  color: rgba(207, 207, 207, 0.7);
+}
+
+#name1 {
+  font-family: "Barlow Semi Condensed";
+  color: hsla(0, 0%, 100%, 0.8);
+  font-weight: 400;
+  font-size: 13px;
+}
+
+#verif1 {
+  font-family: "Barlow Semi Condensed";
+  color: hsla(0, 0%, 100%, 0.5);
+  font-size: 12px;
+  margin: 5px 0 5px 0;
+}
+
+#titre1 {
+  font-family: "Barlow Semi Condensed";
+  color: white;
+  font-weight: 600;
+  margin: 10px 0 10px 0;
+}
+
+#name2 {
+  font-family: "Barlow Semi Condensed";
+  color: hsl(219, 29%, 14%);
+  font-weight: 400;
+  font-size: 13px;
+}
+
+#verif2 {
+  font-family: "Barlow Semi Condensed";
+  color: hsla(219, 29%, 14%, 0.5);
+  font-size: 12px;
+  margin: 5px 0 5px 0;
+}
+
+#titre2 {
+  font-family: "Barlow Semi Condensed";
+  color: hsl(219, 29%, 14%);
+  font-weight: 600;
+  margin: 10px 0 10px 0;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    margin-top: 30px;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 30px;
+    max-height: 100vh;
+  }
+  .box {
+    flex-direction: column;
+    justify-content: stretch;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    height: 100vh;
+  }
+  .quatre {
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+  }
+  .bas {
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+  }
+  .kira {
+    margin: 10px;
+    flex-direction: column;
+  }
+  .daniel, .jon, .jean, .pat, .kira {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    width: 325px;
+    height: auto;
+    padding: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
